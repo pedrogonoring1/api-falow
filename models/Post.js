@@ -8,8 +8,8 @@ var post = new Schema({
     idUsuario: {type: String, required: true},
     mensagem: {type: String, required: true},
     dateTime: {type: Date, required: true},
-    visualizacoes: {type: String, required: true},
-    curtidas: {type: String, required: true},
+    visualizacoes: {type: Number, required: true},
+    curtidas: {type: Number, required: true},
 
 });
 
