@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const Post = require('../models/Post');
 const router = express.Router();
 
+var authMiddleware = require('../config/middleware/auth');
+
+router.use(authMiddleware);
+
 //Criar um post
 router.post('/add-post', async function(req, res, next){
     postRecebido = req.body;
