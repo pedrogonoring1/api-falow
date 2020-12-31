@@ -14,7 +14,7 @@ router.post('/add-post', async function(req, res, next){
     var post = new Post({
         tag: postRecebido.tag,
         idUsuario: postRecebido.idUsuario,
-        nomeUusario: postRecebido.nomeUusario,
+        nomeUsuario: postRecebido.nomeUsuario,
         mensagem: postRecebido.mensagem,
         dateTime: postRecebido.dateTime,
         visualizacoes: 0,
